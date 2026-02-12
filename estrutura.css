@@ -7,15 +7,16 @@
 /* container principal da navbar */
 .containerHeader {
     display: flex;
+    flex: auto;
     justify-content: space-between; /* logo à esquerda, nav à direita */
     align-items: center;            /* alinha verticalmente */
     padding: 0 40px;                /* espaço interno lateral */
 
-    background-color: rgb(23, 22, 22);
+    background-color:#1a1616;
 }
 
 .containerMain{
-    background-color: rgb(19, 15, 15);
+    background-color: 16110F;
     
 }
 
@@ -290,7 +291,7 @@
      
 }
 
-.job1, job2 {
+.job1, .job2 {
     display: flex;
     align-items: center; /* alinha verticalmente */
     gap: 8px; /* controla o espaço entre eles */
@@ -316,7 +317,8 @@
     align-items: center;
     padding: 20px;
     
-    background-color: rgb(19, 15, 15);
+    background-color:#1a1616;
+}
 
 .parte1 {
     display: flex;
