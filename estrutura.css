@@ -1,27 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* container principal da navbar */
 .containerHeader {
     display: flex;
     justify-content: space-between; /* logo à esquerda, nav à direita */
     align-items: center;            /* alinha verticalmente */
     padding: 0 40px;                /* espaço interno lateral */
+
+    background-color: rgb(23, 22, 22);
 }
+
+.containerMain{
+    background-color: rgb(19, 15, 15);
+    
+}
+
+
 
 /* bloco do logo */
 .itemH1 {
     display: flex;
     align-items: center;
+    color: white;
+}
+.itemH1 a {
+    color: aliceblue;
 }
 
 /* bloco da navegação */
 .itemH2 nav {
     display: flex;
     gap: 30px;                      /* espaço entre os links */
+    color: aliceblue;
 }
 
 /* links */
 .itemH2 nav a {
-    text-decoration: none;
+    color: aliceblue;
 }
+
+
+.containerMain{
+   
+    background-color: rgb(13, 12, 12);
+}
+
+
 
 
 /*Section1 - Parte introdutoria*/
@@ -35,6 +63,14 @@
     padding: 40px 20px;
 }
 
+
+.section1>div  h1{
+    color: aliceblue;
+}
+
+.section1>div  p{
+    color: aliceblue;
+}
 /* FOTO */
 .item11{
     display: flex;
@@ -54,6 +90,10 @@
     text-align: center;
 }
 
+.destaque{
+    color: rgb(179, 102, 115);
+}
+
 /* BOTÕES */
 .item14{
     display: flex;
@@ -62,12 +102,28 @@
     flex-wrap: wrap;         /* quebra em telas pequenas */
 }
 
+.button1{
+    border-radius:20px ;
+    padding: 10px;
+}
+
+.button2{
+    border-radius:20px ;
+    padding: 10px;
+    color: aliceblue;
+    background-color: black;
+}
+
+
+
 /* BLOCO DAS TECHS */
-.item15{
+.item15>div{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    color: aliceblue;
+    font-weight: normal;
 }
 
 /* TEXTO "Sou perito..." */
@@ -101,8 +157,9 @@
 .projects {   
     display: flex;
     justify-content: center;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
+    color: rgb(141, 78, 26);
 }
 
 /* CONTAINER DOS PROJECTOS */
@@ -120,6 +177,18 @@
     flex-direction: column;
     gap: 15px;
     max-width: 320px;
+}
+
+
+.projectsEx>div,a{
+    color: aliceblue;
+}
+.tituloProj{
+    color: aliceblue;
+}
+
+.tituloProj2{
+    color: aliceblue;
 }
 
 /* IMAGEM */
@@ -157,11 +226,12 @@
 }
 
 /* TITULO EXPERIENCE */
-.experience{
+.experience {   
     display: flex;
     justify-content: center;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
+    color: rgb(51, 26, 141);
 }
 
 /* BLOCO DE EXPERIÊNCIA (cada item) */
@@ -170,6 +240,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center;
 }
 
 /* LINHA SUPERIOR (icone + cargo + ano) */
@@ -179,19 +250,59 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
+    gap: 150px;
+    color: aliceblue;
 }
+
+.ano1{
+    color: white;
+    font-size: small;
+    font-weight: normal;
+    color: rgb(112, 107, 107);
+
+}
+
+.ano2{
+    color: white;
+    font-size: small;
+    font-weight: normal;
+    color: rgb(112, 107, 107);
+
+}
+
 
 /* AGRUPA ICONE + NOME */
 .cargo1 > div:first-child,
 .cargo2 > div:first-child,
 
 
+.box-icon{
+    color: aliceblue;
+}
+
+
 /* DESCRIÇÃO */
 .descricao1,
 .descricao2{
     max-width: 800px;
+    align-items: center;
+    color: aliceblue;
+     
 }
+
+.job1, job2 {
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    gap: 8px; /* controla o espaço entre eles */
+}
+
+.jobTitle1{
+  
+}
+
+
+
+
 
 
 
@@ -199,17 +310,21 @@
 
 .footer {
     display: flex;
+    flex: auto;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
-}
+    
+    background-color: rgb(19, 15, 15);
 
 .parte1 {
     display: flex;
     flex-direction: column;
     gap: 15px;
     flex: 1;
+    align-items: center;
+    color: aliceblue;
 }
 
 .parte1 > div {
@@ -222,7 +337,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
+
+
+.textoFinal{
+    text-align: center;
+    color: rgb(142, 134, 134);
+}
+
 
 .endereco nav {
     display: flex;
@@ -234,7 +357,12 @@
   flex-direction: row;
   align-items: center;
 
+
 }
 
+
+body{
+background-color: rgb(1, 0, 0);
+}
 
 
