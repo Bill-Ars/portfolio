@@ -12,11 +12,11 @@
     align-items: center;            /* alinha verticalmente */
     padding: 0 40px;                /* espaço interno lateral */
 
-    background-color:#1a1616;
+    background-color:#5e5d5d;
 }
 
 .containerMain{
-    background-color: 16110F;
+    background-color: #16110F;
     
 }
 
@@ -175,6 +175,7 @@
 .projecto1,
 .projecto2{
     display: flex;
+    flex: auto;
     flex-direction: column;
     gap: 15px;
     max-width: 320px;
@@ -253,6 +254,8 @@
     justify-content: space-between;
     gap: 150px;
     color: aliceblue;
+   
+
 }
 
 .ano1{
@@ -317,7 +320,7 @@
     align-items: center;
     padding: 20px;
     
-    background-color:#1a1616;
+    background-color:#5e5d5d;
 }
 
 .parte1 {
@@ -367,4 +370,115 @@ body{
 background-color: rgb(1, 0, 0);
 }
 
+
+
+
+
+
+/* ======== ESTILOS BASE (MOBILE-FIRST) ======== */
+@media (max-width: 768px){
+
+.containerHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(48, 49, 49);
+    gap: 10px;
+}
+
+.itemH2 nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.projecto1,
+.projecto2 {
+    max-width: 100%;
+}
+
+.containerMain {
+    background-color: #131111;
+}
+
+.cargo1,
+.cargo2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.section1 h1 {
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    background-color:#2c2828;
+
+   
+}
+
+ .destaque{
+    color: rgb(107, 24, 70);
+}
+
+}
+
+
+
+/* ======== TABLET ======== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .containerHeader {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 25px 40px;
+        background-color: rgb(56, 39, 24);
+    }
+
+    .itemH2 nav {
+        flex-direction: row;
+        gap: 20px;
+        color: #16110F;
+    }
+
+    .cargo1,
+    .cargo2 {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .section1 h1 {
+        font-size: 24px;
+    }
+
+
+    .footer {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    background-color:#1d0606;
+}
+
+ .destaque{
+    color: rgb(12, 51, 17);
+}
+
+}
 
