@@ -5,21 +5,31 @@
 }
 
 /* container principal da navbar */
-.containerHeader {
-
-    
-
+..containerHeader {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between; /* organiza itens nos extremos */
     padding: 20px;
-    gap: 240px;
-    background-color:#1d1c1c;
-
-
-    background-color:#1d1c1c;
+    gap: 20px; /* menor para desktop normal */
+    background-color: #1d1c1c;
 }
 
+/* Ajuste para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .containerHeader {
+        flex-direction: column; /* empilha logo e nav */
+        gap: 10px; /* espaçamento menor */
+        padding: 15px;
+    }
+
+    .containerHeader nav {
+        display: flex;
+        flex-direction: column; /* links empilhados */
+        align-items: center;
+        gap: 10px;
+    }
+}
 .containerMain{
     background-color: #16110F;
     
